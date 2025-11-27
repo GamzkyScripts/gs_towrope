@@ -122,7 +122,7 @@ const HandleRope = async (originVehicle, originCoords) => {
 		DisableControlAction(0, 23, true);
 
 		// If canceled, delete the current rope attached to the player and reset the state and stop this tick.
-		if (IsControlPressed(0, Config.Keys.cancel) || IsPedInAnyVehicle(ped, true) || IsPedRagdoll(ped)) {
+		if (IsControlPressed(0, Config.Keys.cancel) || IsPedInAnyVehicle(ped, true) || IsPedRagdoll(ped) || !roping) {
 			ClearPedTasks(ped);
 			RemoveRope(carriedRope);
 			DeleteEntity(hookProp);
