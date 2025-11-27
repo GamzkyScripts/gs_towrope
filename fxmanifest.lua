@@ -3,7 +3,7 @@ games { 'gta5' }
 
 author 'Eviate'
 description 'Tow Rope Script'
-version '1.0.0'
+version '1.0.1'
 
 shared_scripts {
 	'config.js',
